@@ -1,0 +1,4 @@
+﻿departmentId,departmentName,headEmployeeId,departmentCode,divisionId
+-1,"Unknown",,"Unknown",-1
+36,"Admin Support Operations",3908,"AD345",7
+38,"Finance",4579,"FIN001",7
