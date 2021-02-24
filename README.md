@@ -1,5 +1,5 @@
 # csv-parser
-A library to deserialize csv files to a specific type.
+A library to deserialize csv file to a specific type.
 
 # returns
 ``` csharp
