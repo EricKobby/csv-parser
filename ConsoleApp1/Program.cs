@@ -7,9 +7,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var parser = new CsvParser("test.csv");
 
-            var departments = parser.Deserialize<department>();
+            var departments = CsvParser.Deserialize<department>("test.csv");
             foreach (var dept in departments)
             {
                 Console.WriteLine(dept.departmentName);

@@ -5,16 +5,11 @@ using System.Linq;
 
 namespace Csv.Parser
 {
-    public class CsvParser
+    public sealed class CsvParser
     {
-
-        private readonly string _csvPath;
-
-        public CsvParser(string csvPath) => _csvPath = csvPath;
-
-        public IEnumerable<T> Deserialize<T>()
+        public static IEnumerable<T> Deserialize<T>(string path)
         {
-            var rawData = File.ReadLines(_csvPath).ToList();
+            var rawData = File.ReadLines(path).ToList();
             var columns = rawData.First().Split(',');
             var rawRows = rawData.Skip(1).ToList();
             var listOfItems = new List<T>();
