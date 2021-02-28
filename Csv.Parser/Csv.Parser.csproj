@@ -1,7 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description></Description>
+    <PackageReleaseNotes>This version was shipped with support for just deserialization of Csv files.</PackageReleaseNotes>
+    <RepositoryType>Git</RepositoryType>
+    <RepositoryUrl>https://github.com/EricKobby/csv-parser</RepositoryUrl>
+    <Copyright>2021</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Eric Kobby Mensah</Authors>
   </PropertyGroup>
 
 </Project>
