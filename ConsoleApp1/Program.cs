@@ -1,5 +1,6 @@
 ﻿using Csv.Parser;
 using System;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -8,11 +9,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            var departments = CsvParser.Deserialize<department>("test.csv");
-            foreach (var dept in departments)
-            {
-                Console.WriteLine(dept.departmentName);
-            }
+            var departments = CsvParser.Deserialize<department>("test.csv").ToList();
+            //foreach (var dept in departments)
+            //{
+            //    Console.WriteLine(dept.departmentName);
+            //}
             Console.ReadKey();
         }
     }
